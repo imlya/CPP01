@@ -6,7 +6,7 @@
 /*   By: imatek <imatek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 13:55:20 by imatek            #+#    #+#             */
-/*   Updated: 2025/05/12 17:44:40 by imatek           ###   ########.fr       */
+/*   Updated: 2025/05/13 16:14:41 by imatek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int main()
 {
-	Zombie* horde = new Zombie[N];
-	horde->announce();
-	delete horde;
+	Zombie* horde = zombieHorde(10, "bar");
+	
+	delete [] horde;
 	return (0);
 }

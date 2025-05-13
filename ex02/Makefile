@@ -1,5 +1,5 @@
-NAME= moar_brainz
-SRC= Zombie.cpp zombieHorde.cpp main.cpp
+NAME= HiThisIsBrain
+SRC= main.cpp
 OBJS= $(SRC:.cpp=.o)
 CC= c++
 CFLAGS= -Wall -Wextra -Werror -std=c++98
@@ -13,7 +13,7 @@ CYAN = \033[36m
 RED = \033[31m
 MAGENTA = \033[35m
 
-TITLE= "\n$(MAGENTA)====================================$(RESET)\n$(CYAN)      CPP01/EX01  :  MOAR BRAINZ          $(RESET)\n$(MAGENTA)====================================$(RESET)\n"
+TITLE= "\n$(MAGENTA)====================================$(RESET)\n$(CYAN)      CPP01/EX02  :  : HI THIS IS BRAIN      $(RESET)\n$(MAGENTA)====================================$(RESET)\n"
 
 all: title $(NAME)
 
