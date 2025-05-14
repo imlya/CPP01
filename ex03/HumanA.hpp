@@ -6,7 +6,7 @@
 /*   By: imatek <imatek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:02:30 by imatek            #+#    #+#             */
-/*   Updated: 2025/05/13 21:03:19 by imatek           ###   ########.fr       */
+/*   Updated: 2025/05/14 17:34:03 by imatek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@
 #include <string>
 
 class HumanA{
+	
 	private:
-		Weapon A;
-		std::string name;
+		std::string _name;
+		Weapon& _WeaponA;
 	public:
-		HumanA(void);
+		HumanA(std::string name, Weapon& A);
 		~HumanA(void);
 		void attack(void);
 };

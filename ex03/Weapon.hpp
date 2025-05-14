@@ -6,7 +6,7 @@
 /*   By: imatek <imatek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:02:43 by imatek            #+#    #+#             */
-/*   Updated: 2025/05/13 20:44:01 by imatek           ###   ########.fr       */
+/*   Updated: 2025/05/14 16:25:54 by imatek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Weapon{
 		std::string _type;
 	
 	public:
-		Weapon(void);
+		Weapon(std::string type);
 		~Weapon(void);
 		std::string getType(void) const;
 		void setType(std::string type);

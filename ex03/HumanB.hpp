@@ -6,7 +6,7 @@
 /*   By: imatek <imatek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:02:35 by imatek            #+#    #+#             */
-/*   Updated: 2025/05/13 21:02:52 by imatek           ###   ########.fr       */
+/*   Updated: 2025/05/14 17:44:30 by imatek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,16 @@
 #include <string>
 
 class HumanB{
+	
 	private:
-		Weapon B;
-		std::string name;
+		Weapon *_WeaponB;
+		std::string _name;
+		
 	public:
-		HumanB(void);
+		HumanB(std::string _name);
 		~HumanB(void);
 		void attack(void);
+		void setWeapon(Weapon &B);
 };
 
 #endif

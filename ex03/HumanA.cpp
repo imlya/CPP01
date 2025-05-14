@@ -6,16 +6,14 @@
 /*   By: imatek <imatek@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 18:02:22 by imatek            #+#    #+#             */
-/*   Updated: 2025/05/13 20:50:00 by imatek           ###   ########.fr       */
+/*   Updated: 2025/05/14 17:32:35 by imatek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA()
+HumanA::HumanA(std::string name, Weapon& A) : _name(name), _WeaponA(A)
 {
-	std::cout << "HumanA called" << std::endl;
-	return ;
 }
 
 HumanA::~HumanA()
@@ -25,5 +23,5 @@ HumanA::~HumanA()
 
 void HumanA::attack()
 {
-	
+	std::cout << _name << " attacks with their " << _WeaponA.getType()<< std::endl;
 }
